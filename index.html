@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>vrtheheros</title>
+        <meta name="description" content="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="_cursor.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <div class="terminal"></div>
+        <script src="typewriting.min.js"></script>
+        <script>
+            var typeWriting = new TypeWriting({
+            targetElement   : document.getElementsByClassName('terminal')[0],
+            inputString     : 'Kuch bhi ni pdha',
+            typing_interval : 130, // Interval between each character
+            blink_interval  : '1s', // Interval of the cursor blinks
+            cursor_color    : '#ffffff', // Color of the cursor
+            }, function() {
+            console.log("END");
+        });
+        </script>
+    </body>
+</html>
