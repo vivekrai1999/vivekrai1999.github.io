@@ -9,7 +9,7 @@
 html,
 body {
     background-color: #fff;
-    color: #4af626;
+    color: #262925;
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 20px;
@@ -48,5 +48,5 @@ div {
 
 .link-main{
     text-decoration: none;
-    color: #4af626;
+    color: #262925;
 }
