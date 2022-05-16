@@ -20,10 +20,33 @@ p {
     font-weight: 500;
 }
 
-
 div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.btn-main{
+    margin-top: 12%;
+    font-size: 65%;
+    background-color: #fff;
+    padding: 3% 5% 3% 5%;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+}
+
+.btn-main:hover{
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.link-main{
+    text-decoration: none;
+    color: #4af626;
 }
