@@ -72,15 +72,7 @@ body, html{
     width: 16vw;
     height: 16vw;
     border-radius: 50%;
-    background: hsla(190, 90%, 51%, 1);
-
-background: radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-background: -moz-radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-background: -webkit-radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12cff3", endColorstr="#5ab2f7", GradientType=1 );
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -391,15 +383,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     display: flex;
     align-items: center;
     justify-content: center;
-    background: hsla(190, 90%, 51%, 1);
-
-background: radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-background: -moz-radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-background: -webkit-radial-gradient(circle, hsla(190, 90%, 51%, 1) 0%, hsla(206, 91%, 66%, 1) 33%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12cff3", endColorstr="#5ab2f7", GradientType=1 );height: 7vw;
+    height: 7vw;
+    background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
     width: 7vw;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -676,6 +661,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     background-position: left;
 }
 
+.bubble {
+    background-image: url("bubble.png");
+    background-size: contain;
+    background-position: center;
+}
+
 .bmi {
     background-image: url("bmi.png");
     background-size: cover;
@@ -753,7 +744,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 
     .project-content p{
         line-height: 5vw;
-        font-size: 2.4vw;
+        font-size: 2.7vw;
         margin-bottom: 20vw;
     }
 
@@ -767,7 +758,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     .btn {
         bottom: 5vw;
         background-color: #5AB2F7;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 2.4vw;
         color: #fff;
         padding: 10px 10px;
