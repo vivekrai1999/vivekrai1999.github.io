@@ -150,6 +150,39 @@ body, html{
     height: 100%;
 }
 
+#anime-line {
+    overflow: hidden;
+}
+#anime-line .text{
+    position: relative;
+}
+
+#anime-line .change-text {
+    color: #2EC4F4;
+    font-weight: 500;
+}
+
+#anime-line .text.change-text::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-left: 2px solid #2EC4F4;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
 #hero-text h1{
     color: #383838;
     font-size: 4vw;
@@ -157,7 +190,7 @@ body, html{
     letter-spacing: 3px;
 }
 
-#hero-text h3{
+#hero-text span{
     color: #383838;
     font-size: 1.3vw;
     font-weight: 400;
@@ -274,10 +307,13 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
         font-size: 10vw;
     }
 
-    #hero-text h3{
+    #hero-text h4{
         font-size: 3vw;
     }
-    #hero-text h4{
+    #hero-text .text{
+        font-size: 3vw;
+    }
+    #hero-text .change-text{
         font-size: 3vw;
     }
 
@@ -916,7 +952,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
         top: 7.8vw;
         border-radius: 15px;
         height: 100vw;
-        width: 100%;
+        width: 110%;
     }
 
     #contact-container {
@@ -927,7 +963,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     #container-form {
         padding: 5vw;
         margin-top: 10vw;
-        width: 95%;
+        width: 105%;
         height: auto;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
