@@ -151,6 +151,58 @@ body, html{
 }
 
 #anime-line {
+    /* background-color: red; */
+}
+
+#anime-line .change-text{
+    position: relative;
+
+}
+
+#anime-line .change-text::before{
+    content: "";
+    color: #36C1F5;
+    animation: words 8s infinite;
+}
+
+#anime-line .change-text::after{
+    background-color: blue;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: calc(100% + 4px);
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #36C1F5;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,50%{
+        content: "Website Developer";
+    }
+    51%,100%{
+        content: "Website Developer";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 5px);
+    }
+}
+
+/* #anime-line {
     overflow: hidden;
 }
 #anime-line .text{
@@ -181,7 +233,7 @@ body, html{
     100%{
         left: 0%;
     }
-}
+} */
 
 #hero-text h1{
     color: #383838;
@@ -313,6 +365,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     #hero-text .text{
         font-size: 3vw;
     }
+
+    #anime-line .static-text{
+        
+    }
+
+    #anime-line {
+    
+    }
+
     #hero-text .change-text{
         font-size: 3vw;
     }
