@@ -1126,9 +1126,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 } */
 
 footer {
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
     margin-top: 2vw;
     color: #fff;
-    padding: 1.5vw;
+    /* padding: 4vw; */
     background: hsla(206, 91%, 66%, 1);
 
 background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
@@ -1141,18 +1147,69 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     text-align: center;
 }
 
-footer p{
-    font-size: 1vw;
-    font-weight: 500;
+#footer-content {
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
 }
+
+#footer-content .col {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vw;
+}
+
+#footer-content h4 {
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+#footer-content .col a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+#footer-content .col a i{
+    font-size: 2vw;
+    margin-right: 1vw;
+}
+
+#end {
+    font-size: 1vw;
+   color: #fff;
+}
+
 
 @media (max-width:600px) {
     footer {
-        margin-top: 10vw;
-        padding: 4vw;
+        height: 50vw;
     }
 
-    footer p {
-        font-size: 3vw;
+    #footer-content .col-1{
+        display: none;
+    }
+
+    #footer-content h4 {
+        font-size: 3.5vw;
+    }
+
+    #footer-content .col a{
+        font-size: 2vw;
+    }
+
+    #footer-content .col a i{
+        font-size: 4vw;
+        margin-right: 0.5vw;
+    }
+    
+
+    #end {
+        font-size: 2.5vw;
     }
 }
