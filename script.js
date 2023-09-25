@@ -9,6 +9,46 @@ document.addEventListener("mousemove",function(dets){
     a.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`
 })
 
+function firstpageAnimation(){
+    var tl = gsap.timeline();
+    tl.from("#nav",{
+        y: '-10',
+        opacity: 0,
+        duration: 0.5,
+        ease: Expo.easeInOut
+    })
+    .from("#hero-text",{
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: Expo.easeInout,
+        stagger: 0.2,
+    })
+    .from("#hero-social-icons",{
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: Expo.easeInout,
+        stagger: 0.2
+    })
+    .from("#interest-container",{
+        y: 30,
+        opacity: 0,
+        duration: 3,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: "#interest-container",
+            scroller: "body",
+            // markers: true,
+            start: "top 80%",
+            end: "top 81%",
+            scrub: 1
+        }
+    })
+}
+
+firstpageAnimation();
+
 var clicked = false;
 
 document.querySelector("#mobile-nav-icon").addEventListener("click",function(){
