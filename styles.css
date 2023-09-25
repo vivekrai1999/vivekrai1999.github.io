@@ -541,6 +541,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
         font-size: 3vw;
     }
 
+    #about-content {
+        margin-bottom: 10vw;
+    }
+
     .quote-img-1{
         height: 4vw;
         width: 4vw;
@@ -625,7 +629,6 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 }
 
 .project-container {
-    z-index: -1;
     display: flex;
     align-items: center;
     padding: 50px;
@@ -698,23 +701,28 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 }
 
 .btn {
+    z-index: 9999;
     position: absolute;
     bottom: 3vw;
     background: hsla(206, 91%, 66%, 1);
-
-background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", endColorstr="#12cff3", GradientType=1 );font-weight: 300;
+    background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", endColorstr="#12cff3", GradientType=1 );font-weight: 300;
     font-size: 0.9vw;
     color: #fff;
     padding: 10px 10px;
     text-decoration: none;
     border: 0px solid transparent;
     border-radius: 5px;
+}
+
+.btn:hover {
+    background: rgb(74, 173, 249);
+    background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", endColorstr="#12cff3", GradientType=1 );font-weight: 300;
 }
 
 @media (max-width:600px) {
