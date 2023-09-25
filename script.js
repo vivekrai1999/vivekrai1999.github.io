@@ -10,17 +10,17 @@ document.addEventListener("mousemove",function(dets){
 })
 
 var textanime = document.querySelector(".change-text");
-var textload = ()=>{
-    setTimeout(()=>{
-        textanime.textContent = "Website Developer"
-    },0);
-    setTimeout(()=>{
-        textanime.textContent = "Android Developer"
-    },4000)
-}
+// var textload = ()=>{
+//     setTimeout(()=>{
+//         textanime.textContent = "Website Developer"
+//     },0);
+//     setTimeout(()=>{
+//         textanime.textContent = "Android Developer"
+//     },4000)
+// }
 
-textload();
-setInterval(textload,4000)
+// textload();
+// setInterval(textload,4000)
 
 function firstpageAnimation(){
     var tl = gsap.timeline();
