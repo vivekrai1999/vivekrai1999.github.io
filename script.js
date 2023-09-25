@@ -31,20 +31,64 @@ function firstpageAnimation(){
         ease: Expo.easeInout,
         stagger: 0.2
     })
-    .from("#interest-container",{
-        y: 30,
+    .from(".cn-1",{
+        y: 50,
         opacity: 0,
         duration: 3,
         stagger: 0.2,
         scrollTrigger: {
-            trigger: "#interest-container",
+            trigger: ".cn-1",
             scroller: "body",
             // markers: true,
             start: "top 80%",
-            end: "top 81%",
+            end: "top 60%",
             scrub: 1
         }
     })
+    
+    .from(".cn-2",{
+        y: 50,
+        opacity: 0,
+        duration: 3,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".cn-2",
+            scroller: "body",
+            // markers: true,
+            start: "top 80%",
+            end: "top 60%",
+            scrub: 1
+        }
+    })
+    .from(".cn-3",{
+        y: 50,
+        opacity: 0,
+        duration: 3,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".cn-3",
+            scroller: "body",
+            // markers: true,
+            start: "top 80%",
+            end: "top 60%",
+            scrub: 1
+        }
+    })
+    .from("#skill-list i",{
+        y: 80,
+        opacity: 0,
+        duration: 2,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: "#skill-list i",
+            scroller: "body",
+            
+            start: "top 75%",
+            end: "top 65%",
+            scrub: 1
+        }
+    })
+
 }
 
 firstpageAnimation();
@@ -66,12 +110,12 @@ document.querySelector("#mobile-nav-icon").addEventListener("click",function(){
 gsap.from(".quote-img-1",{
     y: -30,
     x: -30,
-    
+    duration: 2,
     scrollTrigger: {
         trigger: ".quote-img-1",
         scroller: "body",
         start: "top 60%",
-        end: "top 58%",
+        end: "top 40%",
         scrub: 1,
     }
 })
@@ -84,7 +128,7 @@ gsap.from(".quote-img-2",{
         trigger: ".quote-img-1",
         scroller: "body",
         start: "top 60%",
-        end: "top 58%",
+        end: "top 40%",
         scrub: 1,
     }
 
@@ -100,7 +144,7 @@ gsap.from(".bg-img",{
         trigger: ".bg-img",
         scroller: "body",
         start: "top 60%",
-        end: "top 58%",
+        end: "top 10%",
         scrub:3
     }
     
