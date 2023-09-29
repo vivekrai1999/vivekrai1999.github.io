@@ -64,7 +64,7 @@ body, html{
     bottom: 4vw;
     right: 5vw;
     z-index: 9999;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 16vw;
@@ -410,6 +410,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 
     #mobile-nav-main {
         display: none;
+    }
+
+    #mobile-nav-icon {
+        display: flex;
     }
 
     #mobile-nav-item-list {
