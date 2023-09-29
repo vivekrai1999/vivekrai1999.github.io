@@ -332,6 +332,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 }
 
 @media (max-width:900px) {
+    #mini-circle {
+        display: none;
+    }
+    
     #hero-bg {
         width: 50vw;
     }
