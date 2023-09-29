@@ -330,6 +330,50 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     color: #5AB2F7
 }
 
+@media (max-width:900px) {
+    #hero-bg {
+        width: 50vw;
+    }
+
+    #nav .item {
+        font-size: 1.6vw; 
+    }
+
+    #hero-text h1{
+        font-size: 5vw;
+    }
+
+    #hero-text h4{
+        font-size: 2vw;
+    }
+    #hero-text .text{
+        font-size: 2vw;
+    }
+    #hero-text .change-text{
+        font-size: 2vw;
+    }
+
+    #hero-button {
+        margin: 20px 0;
+    }
+
+    #hero-button #resume-btn {
+        font-size: 1.5vw;
+    }
+
+    #code-box {
+        width: 100%;
+        padding: 3vw;
+    }
+
+    #code-box pre {
+       font-size: 1.5vw;
+       line-height: 2.5vw;
+       letter-spacing: -0.5px;
+    }
+    
+}
+
 @media (max-width:600px) {
     #hero-bg {
         width: 50vw;
@@ -455,7 +499,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 2%;
     height: 100%;
     width: 28%;
@@ -469,7 +513,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     font-size: 1.5vw;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 1.7vw;
+    
 }
 
 #interest-container .containers p{
@@ -495,6 +539,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     color: #fff;
     font-size: 2.5vw;
 }
+
+.icon-title {
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width:600px) {
     #page-2 {
