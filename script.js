@@ -4,10 +4,16 @@
 // });
 
 
+
 var a = document.querySelector("#mini-circle");
 document.addEventListener("mousemove",function(dets){
-    a.style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`
+    gsap.to(a,{
+        left: dets.x-5,
+        top: dets.y-5
+    })
 })
+
+
 
 var textanime = document.querySelector(".change-text");
 // var textload = ()=>{

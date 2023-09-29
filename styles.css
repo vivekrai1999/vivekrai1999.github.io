@@ -12,13 +12,14 @@ body, html{
     font-family: 'Montserrat', sans-serif;
 }
 
-/* #mini-circle {
-    position: absolute;
-    background-color: black;
+#mini-circle {
+    z-index: 999;
+    position: fixed;
+    background-color: #35C1F5;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-} */
+}
 
 #main {
     /* width: 80%; */
