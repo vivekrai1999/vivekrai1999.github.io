@@ -27,44 +27,42 @@ body, html{
     font-size: 20px;
 }
 
-
-
-
 #mobile-nav-main {
+    background-color: #ffffffc3;
+    padding: 5vw 4vw;
+    border-radius: 5px;
     z-index: 999;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0 6vw 6vw 0;
+    bottom: 22vw;
+    right: 3.5vw;
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
     justify-content: center;
     display: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #mobile-nav-item-list {
     display: flex;
+    gap: 8vw;
     flex-direction: column;
-    gap: 40px;
     align-items: center;
     justify-content: center;
 }
 
 
 #mobile-nav-item a{
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    background-color: #5AB2F7;
-    padding: 10px 10px;
+    color: #009ce9;
     transition: all ease-in-out 0.5s;
 }
 
 #mobile-nav-icon {
+    position: fixed;
+    bottom: 4vw;
+    right: 5vw;
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -316,6 +314,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 }
 
 #code-box {
+    word-spacing:-3px;
     width: 80%;
     padding: 6%;
     background-color: #fff;
@@ -324,6 +323,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
 }
 
 #code-box pre {
+    
     line-height: 2vw;
     font-size: 1vw;
     font-weight: 500;
@@ -409,11 +409,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5ab2f7", en
     }
 
     #mobile-nav-main {
-        display: flex;
+        display: none;
     }
 
     #mobile-nav-item-list {
-        display: none;
+        
     }
 }
 

@@ -109,7 +109,7 @@ firstpageAnimation();
 var clicked = false;
 
 document.querySelector("#mobile-nav-icon").addEventListener("click",function(){
-    var menu = document.querySelector("#mobile-nav-item-list")
+    var menu = document.querySelector("#mobile-nav-main")
     if(clicked==true){
         menu.style.display = `flex`
         clicked= false
@@ -119,6 +119,12 @@ document.querySelector("#mobile-nav-icon").addEventListener("click",function(){
         menu.style.display = `none`
     }
 })
+
+// document.querySelector("body").addEventListener("click",function(){
+//     if(clicked==true){
+//         menu.style.display = `none`
+//     }
+// })
 
 gsap.from(".quote-img-1",{
     y: -30,
