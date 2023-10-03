@@ -5,13 +5,37 @@
 
 
 
-var a = document.querySelector("#mini-circle");
-document.addEventListener("mousemove",function(dets){
-    gsap.to(a,{
-        left: dets.x-5,
-        top: dets.y-5
-    })
-})
+// var a = document.querySelector("#mini-circle");
+// document.addEventListener("mousemove",function(dets){
+//     gsap.to(a,{
+//         left: dets.x-5,
+//         top: dets.y-5
+//     })
+// })
+
+function cursorAnimation() {
+    document.addEventListener("mousemove", function (dets) {
+      gsap.to("#big-circle", {
+        left: dets.x,
+        top: dets.y,
+      });
+    });
+    document.querySelectorAll(".item").forEach(function (elem) {
+      elem.addEventListener("mouseover", function () {
+        console.log("mouse enter");
+        gsap.to("#big-circle", {
+          transform: "translate(-50%,-50%) scale(1)",
+        });
+      });
+      elem.addEventListener("mouseout", function () {
+        console.log("mouse leave");
+        gsap.to("#big-circle", {
+          transform: "translate(-50%,-50%) scale(0)",
+        });
+      });
+    });
+  }
+  cursorAnimation()
 
 
 
@@ -109,7 +133,6 @@ function firstpageAnimation(){
     })
 
 }
-
 firstpageAnimation();
 
 var clicked = false;
@@ -131,6 +154,30 @@ document.querySelector("#mobile-nav-icon").addEventListener("click",function(){
 //         menu.style.display = `none`
 //     }
 // })
+
+gsap.to("#nav",{
+    backgroundColor: "#fff",
+    height: "50px",
+    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+    scrollTrigger: {
+        trigger: "#nav",
+        scroller: "body",
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1,
+    }
+})
+
+gsap.to("#nav a",{
+    color: "#2AC6F5",
+    scrollTrigger: {
+        trigger: "#nav",
+        scroller: "body",
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1,
+    }
+})
 
 gsap.from(".quote-img-1",{
     y: -30,
@@ -174,3 +221,4 @@ gsap.from(".bg-img",{
     }
     
 })
+
