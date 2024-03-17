@@ -173,3 +173,15 @@ document.querySelectorAll(".services-option .option").forEach((element) =>
     }
   })
 );
+
+document.querySelector(".mobile-nav-menu").addEventListener("click", () => {
+  if (document.querySelector(".mobile-nav-open").classList.contains("open")) {
+    document.querySelector(".mobile-nav-open").classList.remove("open");
+    document.querySelector(".mobile-nav").style.backgroundColor = "";
+    document.querySelector(".mobile-nav img").style.opacity = "1";
+  } else {
+    document.querySelector(".mobile-nav-open").classList.add("open");
+    document.querySelector(".mobile-nav").style.backgroundColor = "#fff";
+    document.querySelector(".mobile-nav img").style.opacity = "0";
+  }
+});

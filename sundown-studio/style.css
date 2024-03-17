@@ -16,7 +16,6 @@ body {
   /* padding: 0vw 3vw; */
   width: 100%;
   background-color: #efeae3;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -28,13 +27,15 @@ body {
 .page-1 {
   /* padding: 0vw 3vw; */
   height: 100vh;
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  /* width: 96%; */
+  /* margin-left: auto;
+  margin-right: auto; */
   /* background-color: red; */
   border-bottom: 1px solid #c1bcb6;
 }
 .nav-bar {
+  padding: 0rem 2rem;
   /* height: 100px; */
   display: flex;
   align-items: center;
@@ -61,6 +62,7 @@ body {
 .page-1 .hero-container {
   height: calc(100vh - 120px);
   /* background-color: yellow; */
+
   position: relative;
 }
 
@@ -70,8 +72,9 @@ body {
   bottom: 0;
   height: 80%;
   /* background-color: green; */
+  padding: 0vw 2rem;
   padding-bottom: 4vw;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -82,7 +85,7 @@ body {
   line-height: 30px;
   letter-spacing: -1px;
   font-weight: 700;
-  width: 28%;
+  width: 60%;
 }
 
 .hero-content {
@@ -382,6 +385,39 @@ body {
   justify-content: space-between;
 }
 
+.mobile-nav-open {
+  position: absolute;
+  height: 21rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  border-top: 1px solid #504a45;
+  transform: translateY(-150%);
+  transition: all 0.8s ease;
+}
+
+.open {
+  transform: translateY(0%);
+}
+
+.mobile-nav-menu-open {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.mobile-nav-menu-option h1 {
+  font-size: 3.7rem;
+  line-height: 4.1rem;
+  font-weight: 600;
+}
+
 .mobile-nav img {
   width: 110px;
   height: auto;
@@ -410,12 +446,14 @@ body {
 
   .mobile-nav {
     display: flex;
+    height: 6rem;
+    padding: 1.5rem 1.5rem 0.3rem 1.5rem;
   }
 
   .page-1 {
-    height: 35rem;
+    height: 40rem;
     width: 100%;
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     border-bottom: 1px solid #000;
     /* background-color: green; */
   }
@@ -425,12 +463,15 @@ body {
   }
 
   .page-1 .hero-container {
-    height: 100%;
+    height: calc(100% - 6rem);
+    padding: 0rem 1.5rem;
   }
 
   .hero-container-content {
     flex-direction: column-reverse;
+    position: static;
     padding: 0;
+    height: 100%;
   }
 
   .hero-content {
@@ -441,6 +482,9 @@ body {
     font-size: 4rem;
     letter-spacing: -0.2rem;
     line-height: 3.4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
   }
 
   .sub-content {
