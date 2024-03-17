@@ -547,6 +547,7 @@ body {
   .services-option {
     width: 100%;
     padding: 3rem 3rem 0rem 3rem;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .services-option .option h1 {
