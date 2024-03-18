@@ -6,6 +6,7 @@ document.querySelectorAll(".featured-project").forEach((element) => {
     video.autoplay = true;
     video.loop = true;
     video.muted = true;
+    element.querySelector(".color-bg").style.transform = "translateY(0%)";
     // video.setAttribute("autoplay");
     // video.setAttribute("loop");
     // video.setAttribute("muted");
@@ -76,6 +77,7 @@ document.querySelectorAll(".featured-project").forEach((element) => {
 document.querySelectorAll(".featured-project").forEach((element) => {
   element.addEventListener("mouseleave", (e) => {
     //console.log(e.target.dataset.index);
+    element.querySelector(".color-bg").style.transform = "translateY(-120%)";
     document.querySelector(".project-video-container").style.opacity = "0";
     document.querySelector(".project-video-container").style.zIndex = "-1";
   });
