@@ -3,9 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="loco.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/assets/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./src/assets/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./src/assets/images/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./src/css/loco.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <title>Vivek Rai - Full Stack Developer</title>
   </head>
   <body>
@@ -33,14 +56,14 @@
     <div id="mobile-nav-icon">
       <i class="ri-menu-line"></i>
     </div>
-    
+
     <div id="overlay"></div>
-    
+
     <div id="main">
       <div id="nav">
         <div id="logo">
           <a href="#" class="item">
-            <i class="ri-git-branch-fill"></i>
+            <img src="./src/assets/images/logo/logo.png" alt="logo" />
           </a>
         </div>
         <div id="menu-items">
@@ -51,7 +74,11 @@
         </div>
       </div>
       <div id="page-1">
-        <img id="hero-bg" src="background-hero.svg" alt="">
+        <img
+          id="hero-bg"
+          src="./src/assets/images/background-hero.svg"
+          alt=""
+        />
         <div id="hero-container">
           <div id="left-container">
             <div id="hero-content">
@@ -64,7 +91,9 @@
                 </div>
               </div>
               <div id="hero-button">
-                <a href="ng9FFqQ0Z.pdf" id="resume-btn" download>Download resume</a>
+                <a href="ng9FFqQ0Z.pdf" id="resume-btn" download
+                  >Download resume</a
+                >
               </div>
               <div id="hero-social-icons">
                 <a href="https://github.com/vivekrai1999">
@@ -80,15 +109,28 @@
             </div>
           </div>
           <div id="right-container">
-            <div id="code-box">
-              <pre>1  class <b>Person</b> {</pre>
+            <div class="terminal">
+              <div class="static-text">
+                <span>
+                  Vivek Rai's Portfolio [Version 1.0.0]<br />
+                  (c) Vtech Solutions Pvt. Ltd. All rights reserved.<br />
+                  For more information on commands type help.
+                </span>
+              </div>
+              <div class="history"></div>
+              <div class="output"></div>
+              <div class="command-input">
+                <span>C:\Users\vivek></span>
+                <input type="text" class="command" autofocus />
+              </div>
+            </div>
+            <!-- <pre>1  class <b>Person</b> {</pre>
               <pre>2   constructor() {</pre>
               <pre>3    this.name = <b>"Vivek rai"</b>;</pre>
               <pre>4    this.traits = ["<b>DESIGN</b>", "<b>DEV</b>"];</pre>
               <pre>5    this.age = new Date().getFullYear() - 1999;</pre>
               <pre>6   }</pre>
-              <pre>7  }</pre>
-            </div>
+              <pre>7  }</pre> -->
           </div>
         </div>
       </div>
@@ -104,8 +146,11 @@
               </div>
               <h3>Web Developement</h3>
             </div>
-            
-            <p> I have a good hands on experience in web developement and technologies like HTML, CSS, Vanilla Javascript. </p>
+
+            <p>
+              I have a good hands on experience in web developement and
+              technologies like HTML, CSS, Vanilla Javascript.
+            </p>
           </div>
           <div class="containers cn-2">
             <div class="icon-title">
@@ -114,8 +159,11 @@
               </div>
               <h3>Android</h3>
             </div>
-            
-            <p> I am an enthusiast in Android Developement. I have developed several apps using Flutter and Dart. </p>
+
+            <p>
+              I am an enthusiast in Android Developement. I have developed
+              several apps using Flutter and Dart.
+            </p>
           </div>
           <div class="containers cn-3">
             <div class="icon-title">
@@ -124,8 +172,11 @@
               </div>
               <h3>Creative Coding</h3>
             </div>
-            
-            <p> I love creative coding because I do both coding & designing. making beautiful art with code is very satisfying to me. </p>
+
+            <p>
+              I love creative coding because I do both coding & designing.
+              making beautiful art with code is very satisfying to me.
+            </p>
           </div>
         </div>
       </div>
@@ -135,17 +186,39 @@
         </div>
         <div id="about-container">
           <div id="about-img">
-            <img src="https://avatars.githubusercontent.com/u/96563624?v=4" alt="" />
+            <img
+              src="https://avatars.githubusercontent.com/u/96563624?v=4"
+              alt=""
+            />
           </div>
           <div id="about-content">
-            <img class="quote-img-1" src="quote-left.png" alt="">
-            <p> Hi, I'm Vivek Rai. Motivated computer science postgraduate with a solid academic background and a keen interest in software development and technology. Seeking opportunities to apply theoretical knowledge gained during studies to practical, real-world projects. Eager to collaborate with industry professionals, contribute to innovative solutions, and further develop skills in programming, problem-solving, and teamwork. Dedicated to staying updated with the latest technological advancements and leveraging them to deliver efficient and impactful software solutions. </p>
-            <img class="quote-img-2" src="quote-right.png" alt="">
+            <img
+              class="quote-img-1"
+              src="./src/assets/images/quote-left.png"
+              alt=""
+            />
+            <p>
+              Hi, I'm Vivek Rai. Motivated computer science postgraduate with a
+              solid academic background and a keen interest in software
+              development and technology. Seeking opportunities to apply
+              theoretical knowledge gained during studies to practical,
+              real-world projects. Eager to collaborate with industry
+              professionals, contribute to innovative solutions, and further
+              develop skills in programming, problem-solving, and teamwork.
+              Dedicated to staying updated with the latest technological
+              advancements and leveraging them to deliver efficient and
+              impactful software solutions.
+            </p>
+            <img
+              class="quote-img-2"
+              src="./src/assets/images/quote-right.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div id="page-4">
-        <img class="bg-img" src="bg.png" alt="">
+        <img class="bg-img" src="./src/assets/images/bg.png" alt="" />
         <div id="skill-content">
           <div class="page-header">
             <h2>My Skillset</h2>
@@ -165,31 +238,76 @@
         <div class="project-container">
           <div class="project-content">
             <h2>Cryptority</h2>
-            <p> Designed, developed, and deployed a robust cryptography application using Flutter framework for Android devices. Successfully integrated classic encryption algorithms including Caesar Cipher, AES (Advanced Encryption Standard), DES (Data Encryption Standard), Hill Cipher, and SHA (Secure Hash Algorithm) within the application. Designed intuitive UI for algorithm selection, user input, and output display. Implemented secure data handling and validation to ensure user privacy. Optimized performance and fixed bugs through testing and debugging. </p>
-            <a href="https://github.com/vivekrai1999/Cryptority-Android-App/" class="btn">Source Code</a>
+            <p>
+              Designed, developed, and deployed a robust cryptography
+              application using Flutter framework for Android devices.
+              Successfully integrated classic encryption algorithms including
+              Caesar Cipher, AES (Advanced Encryption Standard), DES (Data
+              Encryption Standard), Hill Cipher, and SHA (Secure Hash Algorithm)
+              within the application. Designed intuitive UI for algorithm
+              selection, user input, and output display. Implemented secure data
+              handling and validation to ensure user privacy. Optimized
+              performance and fixed bugs through testing and debugging.
+            </p>
+            <a
+              href="https://github.com/vivekrai1999/Cryptority-Android-App/"
+              class="btn"
+              >Source Code</a
+            >
           </div>
           <div class="project-img cryptority"></div>
         </div>
         <div class="project-container">
           <div class="project-content">
             <h2>Bubble Game</h2>
-            <p> Implemented dynamic bubble creation and management using JavaScript, enhancing user engagement. Utilized CSS for animations and styling to create an appealing visual design. Ensured cross-device compatibility through responsive design techniques, making the game accessible on desktop and mobile devices. Developed a scoring system to track player performance, demonstrating strong JavaScript skills. </p>
-            <a href="https://vivekrai1999.github.io/BubbleGame" class="btn">Demo</a>
+            <p>
+              Implemented dynamic bubble creation and management using
+              JavaScript, enhancing user engagement. Utilized CSS for animations
+              and styling to create an appealing visual design. Ensured
+              cross-device compatibility through responsive design techniques,
+              making the game accessible on desktop and mobile devices.
+              Developed a scoring system to track player performance,
+              demonstrating strong JavaScript skills.
+            </p>
+            <a
+              href="https://vivekrai1999.github.io/src/projects/BubbleGame"
+              class="btn"
+              >Demo</a
+            >
           </div>
           <div class="project-img bubble"></div>
         </div>
         <div class="project-container">
           <div class="project-content">
             <h2>BMI Calculator</h2>
-            <p> Developed a user-friendly BMI calculator app using Flutter. Provided quick and accurate BMI results based on user inputs. Demonstrated proficiency in Flutter's UI and logic implementation. Contributed to health monitoring through a simple yet effective mobile tool. </p>
-            <a href="https://github.com/vivekrai1999/bmi_calculator" class="btn">Source Code</a>
+            <p>
+              Developed a user-friendly BMI calculator app using Flutter.
+              Provided quick and accurate BMI results based on user inputs.
+              Demonstrated proficiency in Flutter's UI and logic implementation.
+              Contributed to health monitoring through a simple yet effective
+              mobile tool.
+            </p>
+            <a href="https://github.com/vivekrai1999/bmi_calculator" class="btn"
+              >Source Code</a
+            >
           </div>
           <div class="project-img bmi"></div>
         </div>
         <div class="project-container">
           <div class="project-content">
             <h2>KrishiMitra</h2>
-            <p> Created "Krishi Mitra," an innovative Flutter-based Android application. Leveraged Firebase for seamless user authentication and data storage, ensuring a secure and personalized experience. Integrated weather and news APIs to provide real-time agricultural updates and relevant information to users. Developed advanced functionality for plant disease detection using Machine Learning, offering users accurate diagnoses and suggesting effective remedies. Implemented real-time IoT field monitoring, enabling farmers to remotely monitor their fields and make informed decisions. </p>
+            <p>
+              Created "Krishi Mitra," an innovative Flutter-based Android
+              application. Leveraged Firebase for seamless user authentication
+              and data storage, ensuring a secure and personalized experience.
+              Integrated weather and news APIs to provide real-time agricultural
+              updates and relevant information to users. Developed advanced
+              functionality for plant disease detection using Machine Learning,
+              offering users accurate diagnoses and suggesting effective
+              remedies. Implemented real-time IoT field monitoring, enabling
+              farmers to remotely monitor their fields and make informed
+              decisions.
+            </p>
             <a href="#" class="btn">Source Code</a>
           </div>
           <div class="project-img krishi"></div>
@@ -197,21 +315,11 @@
       </div>
       <div id="mini-projects-page">
         <div class="mini-project-container">
-          <div class="mini-project">
-
-          </div>
-          <div class="mini-project">
-            
-          </div>
-          <div class="mini-project">
-            
-          </div>
-          <div class="mini-project">
-            
-          </div>
-          <div class="mini-project">
-            
-          </div>
+          <div class="mini-project"></div>
+          <div class="mini-project"></div>
+          <div class="mini-project"></div>
+          <div class="mini-project"></div>
+          <div class="mini-project"></div>
         </div>
       </div>
       <div id="page-6">
@@ -229,16 +337,34 @@
               <div id="row-1">
                 <div id="name">
                   <label for="name">Name</label>
-                  <input type="text" name="name" placeholder="John Doe" required class="css-input" />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                    class="css-input"
+                  />
                 </div>
                 <div id="mail">
                   <label for="email">Email</label>
-                  <input type="email" name="email" placeholder="example@gmail.com" required class="css-input" />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                    class="css-input"
+                  />
                 </div>
               </div>
               <div id="row-2">
                 <label for="message">Message</label>
-                <textarea rows="8" cols="60" name="text" placeholder="Hey there!" class="css-input"></textarea>
+                <textarea
+                  rows="8"
+                  cols="60"
+                  name="text"
+                  placeholder="Hey there!"
+                  class="css-input"
+                ></textarea>
               </div>
               <input type="submit" value="Send" class="send-btn" />
             </form>
@@ -252,11 +378,15 @@
           </div>
           <div class="col col-2">
             <h4>Quick Links</h4>
-            <a href="#">Home</a><a href="#">About</a><a href="#">Skills</a><a href="#">Projects</a>
+            <a href="#">Home</a><a href="#">About</a><a href="#">Skills</a
+            ><a href="#">Projects</a>
           </div>
           <div class="col col-3">
             <h4>Contact Info</h4>
-            <a href="#">+91-7340553117</a><a href="#">vivek.rai.2807@gmail.com</a><a href="#">Kota, Rajasthan, India-324005</a><div id="social-footer-links">
+            <a href="#">+91-7340553117</a
+            ><a href="#">vivek.rai.2807@gmail.com</a
+            ><a href="#">Kota, Rajasthan, India-324005</a>
+            <div id="social-footer-links">
               <a href="#"><i class="ri-github-fill"></i></a>
               <a href="#"><i class="ri-linkedin-box-fill"></i></a>
               <a href="#"><i class="ri-instagram-fill"></i></a>
@@ -268,11 +398,26 @@
           <p>Created with ❤️ by Vivek Rai</p>
         </div>
       </footer>
-      
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/terminal.js"></script>
   </body>
 </html>
