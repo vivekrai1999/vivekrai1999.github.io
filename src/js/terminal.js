@@ -191,6 +191,7 @@ $(".command").on("keyup", function (e) {
     }
 
     $(".history").html(historyString);
+    $(".terminal")[0].scrollTop = $(".terminal")[0].scrollHeight;
     e.target.value = "";
   }
 });
